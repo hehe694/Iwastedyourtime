@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lol! 🧀</title>
+    <style>
+        /* The flashing rainbow background loop */
+        @keyframes rainbow {
+            0% { background-color: #ff0000; }
+            16% { background-color: #ffff00; }
+            33% { background-color: #00ff00; }
+            50% { background-color: #00ffff; }
+            66% { background-color: #0000ff; }
+            83% { background-color: #ff00ff; }
+            100% { background-color: #ff0000; }
+        }
+
+        /* Reset defaults and make sure it fills the screen */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Cycles through colors extremely fast (0.15 seconds!) */
+            animation: rainbow 0.15s infinite linear;
+        }
+
+        /* The card holding the prank info */
+        .troll-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            border: 8px solid #000000;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 3rem;
+            color: #000000;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Standard Troll Face Image scaled nicely */
+        .troll-img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="troll-card">
+        <h1>I WASTED YOUR TIME! 😂</h1>
+        <!-- Using a direct link to a transparent Troll Face image -->
+        <img class="troll-img" src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png" alt="Troll Face">
+    </div>
+
+</body>
+</html>
